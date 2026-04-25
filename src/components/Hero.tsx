@@ -25,7 +25,7 @@ export function Hero() {
         No subscriptions. No tracking. Full control.
       </p>
 
-      <a href="https://app.duckflix.fun" target='_blank' className="mt-8 inline-flex items-center gap-2.5 border border-primary/15 rounded-full py-1.5 pl-2 pr-3.5 text-[12px] text-muted">
+      <a title='Demo application' href="https://app.duckflix.fun" target='_blank' className="mt-8 inline-flex items-center gap-2.5 border border-primary/15 rounded-full py-1.5 pl-2 pr-3.5 text-[12px] text-muted">
         <span className="bg-primary text-primary-fg text-[10px] font-semibold tracking-[0.08em] px-2 py-0.5 rounded-full">
           DEMO
         </span>

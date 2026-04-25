@@ -35,6 +35,7 @@ export function Links() {
         {LINKS.map(({ icon, label, sub, href }) => (
           <a
             key={label}
+            title={label}
             href={href}
             target="_blank"
             rel="noopener noreferrer"

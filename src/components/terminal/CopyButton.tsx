@@ -16,6 +16,7 @@ export function CopyButton({ text }: Props) {
   return (
     <button
       onClick={handleCopy}
+      title="Copy"
       className={`
         shrink-0 bg-primary/8 border border-primary/15 rounded-xl
         px-2.5 py-1 text-[11px] tracking-[0.04em] font-sans

@@ -30,9 +30,7 @@ export function TerminalBlock({
 }: TerminalBlockProps) {
   return (
     <div className="bg-surface border border-primary/8 rounded-3xl overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.1)]">
-      {/* Title bar */}
       <div className="flex items-center gap-2.5 px-4 py-3 border-b border-primary/6">
-        {/* Mac tačkice */}
         <div className="flex gap-1.5">
           {DOTS.map((c) => (
             <div
@@ -43,11 +41,11 @@ export function TerminalBlock({
           ))}
         </div>
 
-        {/* Tabovi (Sada interaktivni) */}
         <div className="flex gap-1.5 ml-2">
           {tabs.map((t) => (
             <button
               key={t}
+              title={"tab: " + t}
               onClick={() => onTabChange(t)}
               className={`text-[11px] px-2.5 py-0.5 rounded-xl font-medium transition-colors ${
                 activeTab === t
@@ -60,11 +58,11 @@ export function TerminalBlock({
           ))}
         </div>
 
-        {/* OS Tagovi (Sada interaktivni) */}
         <div className="ml-auto flex gap-1.5">
           {osTags.map((label) => (
             <button
               key={label}
+              title={label}
               onClick={() => onOsChange(label)}
               className={`text-[10px] px-2 py-0.5 rounded-xl font-medium tracking-[0.04em] transition-colors ${
                 activeOs === label
