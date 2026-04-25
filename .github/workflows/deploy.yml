@@ -29,3 +29,11 @@ jobs:
           source: "dist/*"
           target: "/var/www/duckflix"
           strip_components: 1
+          
+      - name: Zip dist folder
+        run: zip -r duckflix-website-dist.zip dist/
+
+      - name: Upload to Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: duckflix-website-dist.zip
