@@ -7,7 +7,7 @@ import { ThemeToggle } from "./components/ThemeToggle";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-bg text-text font-sans flex flex-col items-center px-6 pt-20 pb-30 transition-colors duration-300">
+    <main className="min-h-screen bg-bg text-text font-sans flex flex-col items-center px-6 pt-20 pb-30 transition-colors duration-300">
       <div
         className="fixed inset-0 pointer-events-none"
         style={{
@@ -25,6 +25,6 @@ export default function App() {
       >
         Open source · Self-hosted · Built with Bun & TypeScript
       </motion.p>
-    </div>
+    </main>
   );
 }
