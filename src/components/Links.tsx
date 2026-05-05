@@ -16,7 +16,7 @@ const LINKS: LinkItem[] = [
   {
     label: "Discord",
     sub: "Join the community",
-    href: "https://discord.gg/duckflix",
+    href: "https://discord.gg/4cxTA2ahbb",
     icon: <img src={DiscordLogo} alt="Discord" className="w-6 h-6" />,
   },
   {
